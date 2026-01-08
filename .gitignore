@@ -9,3 +9,4 @@ app.db
 *.db-shm
 *.sqlite-wal
 *.sqlite-shm
+web/.next/
