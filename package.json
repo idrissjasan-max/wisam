@@ -1,0 +1,18 @@
+{
+  "name": "wisam",
+  "version": "1.0.0",
+  "description": "Simple Node.js CLI for managing users in SQLite",
+  "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "lint": "node --check index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.6.0",
+    "minimist": "^1.2.8"
+  }
+}
