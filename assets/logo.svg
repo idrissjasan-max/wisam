@@ -1,0 +1,18 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pulseGradient" x1="20" y1="20" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2EC4B6"/>
+      <stop offset="0.5" stop-color="#3A86FF"/>
+      <stop offset="1" stop-color="#FF7A59"/>
+    </linearGradient>
+    <linearGradient id="innerGradient" x1="70" y1="60" x2="170" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7B267"/>
+      <stop offset="1" stop-color="#F25C54"/>
+    </linearGradient>
+  </defs>
+  <path d="M110 24C145 24 176 52 182 86C186 109 177 130 160 149C148 162 133 175 110 196C87 175 72 162 60 149C43 130 34 109 38 86C44 52 75 24 110 24Z" fill="url(#pulseGradient)" opacity="0.92"/>
+  <path d="M110 58C130 58 147 72 151 92C154 108 146 122 134 134C126 142 118 149 110 156C102 149 94 142 86 134C74 122 66 108 69 92C73 72 90 58 110 58Z" fill="url(#innerGradient)"/>
+  <path d="M80 105C88 92 101 86 115 86C128 86 141 92 149 105" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="110" cy="116" r="18" fill="#ffffff"/>
+  <path d="M67 136C72 150 86 162 110 176C134 162 148 150 153 136" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+</svg>

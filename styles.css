@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary: #2ec4b6;
+  --secondary: #3a86ff;
+  --accent: #ff7a59;
+  --ink: #1b1f2a;
+  --muted: #5f6b7a;
+  --surface: #f7f9fc;
+  --white: #ffffff;
+  --shadow: 0 25px 60px rgba(15, 23, 42, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Alexandria', sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  background: radial-gradient(circle at top, rgba(46, 196, 182, 0.15), transparent 60%),
+    linear-gradient(120deg, #fef9f7, #f3f7ff);
+  padding: 32px 6vw 80px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand img {
+  width: 64px;
+  height: 64px;
+}
+
+.brand h1 {
+  font-size: 1.1rem;
+}
+
+.brand span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links .outline {
+  padding: 10px 18px;
+  border: 1px solid rgba(58, 134, 255, 0.4);
+  border-radius: 999px;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.hero-text h2 {
+  font-size: clamp(2rem, 3.5vw, 3.4rem);
+  margin: 20px 0;
+}
+
+.hero-text p {
+  color: var(--muted);
+}
+
+.pill {
+  display: inline-flex;
+  padding: 6px 16px;
+  background: rgba(46, 196, 182, 0.15);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.primary {
+  background: linear-gradient(120deg, var(--secondary), var(--primary));
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(27, 31, 42, 0.15);
+}
+
+.btn.full {
+  width: 100%;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.hero-stats div {
+  background: var(--white);
+  padding: 12px 18px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+  min-width: 120px;
+}
+
+.hero-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.hero-card h3 {
+  margin-bottom: 12px;
+}
+
+.hero-card p {
+  color: var(--muted);
+}
+
+.donation-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.donation-options button {
+  border: 1px solid rgba(46, 196, 182, 0.3);
+  background: rgba(46, 196, 182, 0.1);
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.section {
+  padding: 80px 6vw;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header span {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.section-header h2 {
+  font-size: clamp(1.8rem, 2.6vw, 2.6rem);
+  margin-top: 12px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.about-cards {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: var(--surface);
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.program-grid,
+.news-grid,
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.program-card,
+.news-card,
+.impact-card {
+  background: var(--white);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.portal {
+  background: linear-gradient(180deg, rgba(46, 196, 182, 0.08), rgba(255, 255, 255, 0));
+}
+
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.portal-card {
+  background: var(--white);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.portal-card.highlight {
+  border: 1px solid rgba(58, 134, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(58, 134, 255, 0.12);
+}
+
+.portal-card ul {
+  margin-top: 12px;
+  padding-right: 18px;
+  color: var(--muted);
+}
+
+.portal-form {
+  background: var(--white);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 12px;
+}
+
+.impact {
+  background: linear-gradient(160deg, rgba(58, 134, 255, 0.08), rgba(46, 196, 182, 0.1));
+}
+
+.donate {
+  background: var(--surface);
+}
+
+.donate-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  align-items: center;
+}
+
+.donate ul {
+  margin-top: 16px;
+  padding-right: 20px;
+  color: var(--muted);
+}
+
+.donate-card {
+  background: var(--white);
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.note {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+form {
+  display: grid;
+  gap: 14px;
+}
+
+input,
+textarea {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(27, 31, 42, 0.1);
+  font-family: inherit;
+}
+
+.footer {
+  background: #10131a;
+  color: var(--white);
+  padding: 40px 6vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.footer img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    justify-content: center;
+  }
+
+  .hero-card {
+    order: -1;
+  }
+}

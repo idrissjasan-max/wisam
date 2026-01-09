@@ -1,0 +1,13 @@
+{
+  "name": "jam3eea-cli",
+  "version": "0.1.0",
+  "description": "CLI لإدارة جمعية صغيرة",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.7",
+    "yargs": "^17.7.2"
+  }
+}
