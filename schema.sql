@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS members (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  full_name TEXT NOT NULL,
+  phone TEXT NOT NULL,
+  email TEXT NOT NULL,
+  joined_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS donations (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  member_id INTEGER,
+  amount REAL NOT NULL,
+  note TEXT NOT NULL,
+  donated_at TEXT NOT NULL,
+  FOREIGN KEY (member_id) REFERENCES members(id)
+);
